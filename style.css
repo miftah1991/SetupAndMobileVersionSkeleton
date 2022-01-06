@@ -15,7 +15,7 @@ header {
   }
 
   .mylogo {
-    color: #FFFFFF;
+    color: #FFF;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -40,7 +40,7 @@ header {
   }
 
   .title-1 {
-    color: #7D73FC;
+    color: #7d73fc;
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
@@ -52,9 +52,8 @@ header {
   }
   
   .title-2 {
-    font-family: Roboto;
     font-style: normal;
-    color: #EDECFF;
+    color: #edecff;
     font-weight: 500;
     line-height: 24px;
     font-size: 32px;
@@ -62,7 +61,7 @@ header {
     text-align: center;
     background-color: transparent;
   }
-  
+
   .para {
     font-style: normal;
     font-weight: normal;
@@ -71,3 +70,4 @@ header {
     color: #fff;
     margin: 12px 0;
   }
+  
