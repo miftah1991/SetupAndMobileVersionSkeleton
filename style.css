@@ -7,11 +7,11 @@ header {
   display: flex;
   justify-content: space-around;
   font-size: 1.7rem;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   margin-right: 24px;
   padding-top: 40px;
   width: 100%;
-  height: 60px;
+  height: 20px;
 }
 
 .mylogo {
@@ -43,7 +43,7 @@ header {
   color: #7d73fc;
   font-style: normal;
   font-weight: bold;
-  font-size: 48px;
+  font-size: 35px;
   line-height: 52px;
   text-align: center;
   letter-spacing: 0.37px;
@@ -56,7 +56,7 @@ header {
   color: #edecff;
   font-weight: 500;
   line-height: 24px;
-  font-size: 32px;
+  font-size: 22px;
   padding: 1rem;
   text-align: center;
   background-color: transparent;
@@ -69,4 +69,8 @@ header {
   line-height: 24px;
   color: #fff;
   margin: 12px 0;
+}
+
+.baricon {
+  color: #fff;
 }
