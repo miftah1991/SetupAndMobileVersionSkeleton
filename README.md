@@ -11,6 +11,8 @@ Project  Demo
 ---------------------------------------------
 Live Demo Link
 
+![alt text](https://github.com/miftah1991/SetupAndMobileVersionSkeleton/blob/Milestone1/SystemScreenShot.png)
+
 **Getting Started**
 -----------------------------------------------------------
 These are the steps to get local copy and running the project.

@@ -1,0 +1,26 @@
+{
+  "name": "setupandmobileversionskeleton",
+  "version": "1.0.0",
+  "description": "This project is my portfolio, my recent completed projects, my biography, and contacts information.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miftah1991/SetupAndMobileVersionSkeleton.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miftah1991/SetupAndMobileVersionSkeleton/issues"
+  },
+  "homepage": "https://github.com/miftah1991/SetupAndMobileVersionSkeleton#readme",
+  "devDependencies": {
+    "hint": "^6.1.9",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
+  }
+}
