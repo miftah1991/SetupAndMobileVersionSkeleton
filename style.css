@@ -74,3 +74,150 @@ header {
 .baricon {
   color: #fff;
 }
+
+.hrbar{
+  border: 0.2px solid #646369;
+  margin-left:10px;
+  margin-right:10px;
+}
+
+.features{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 44px;
+}
+
+.lang{
+  width: 50%;
+}
+
+.framework{
+  width: 50%;
+}
+
+.feature-title{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  color: #9490FF;
+}
+
+.featureslist{
+  color:#F5F5FF;
+  list-style: none;
+  padding:0px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.socialicons{
+  color:white;
+  display: flex;
+  justify-content: center;
+}
+.fab {
+  color: white;
+  width: 30px;
+}
+
+.project-setion{
+  display: flex;
+  padding: 10px 44px;
+  justify-content: center;
+}
+
+.work-icon{
+  color:#C4C4C4;
+  padding:25px;
+}
+
+.work-title{
+  color:#A2A3AE;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.recent-project-title{
+  color: #9490FF;
+  font-style: normal;
+  padding: 10px 45px;
+  font-size: 40px;
+  line-height: 52px;
+  font-style: normal;
+  font-weight: 500;
+  word-wrap: break-word;
+  width: 50%;
+}
+
+.proj-1,.proj-2{
+  padding: 10px 44px;
+}
+
+.proj-title{
+  color:#fff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.project-desc-p{
+  color:#DCDCE8;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.proj-tech{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.techs{
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  border-right: 1px solid gray;
+  padding: 10px;
+  color: #fff;
+}
+
+.noborder{
+  border:none;
+}
+
+.btn{
+  margin-top:15px;
+  background-color: #7D73FC;
+  width: 95px;
+  height: 44px;
+  color: #fff;
+  border:1px solid #7D73FC;
+}
+
+.btn:hover{
+  color:#7D73FC;
+  background-color: #fff;
+}
+
+.proj-1{
+  background-image: url('images/proj-back.png');
+  background-repeat: no-repeat;
+}
+
+.proj-2{
+  background-image: url('images/p2.png');
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.social-section{
+  padding-top:20px;
+  padding-bottom: 20px;
+}
