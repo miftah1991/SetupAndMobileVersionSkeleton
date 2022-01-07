@@ -143,12 +143,12 @@ header {
   font-weight: 500;
   font-size: 20px;
   padding-left: 20px;
-  margin: 0px;
+  margin: 1px;
 }
+
 .work-title a {
   text-decoration: none;
   color: #a2a3ae;
-
 }
 
 .recent-project-title {
@@ -164,7 +164,8 @@ header {
 
 .proj-1,
 .proj-2,
-.proj-3,.proj-4 {
+.proj-3,
+.proj-4 {
   padding: 10px 44px;
 }
 
@@ -217,31 +218,37 @@ header {
   background-color: #fff;
 }
 
-.proj-1,.proj-3 {
+.proj-1,
+.proj-3 {
   background-image: url("images/proj-back.png");
   background-repeat: no-repeat;
 }
 
-.proj-2,.proj-4 {
+.proj-2,
+.proj-4 {
   background-image: url("images/p2.png");
   background-position: right;
   background-repeat: no-repeat;
 }
-.tec-section{
+
+.tec-section {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
 }
+
 .tec {
   width: 50%;
 }
-.tec h2{
+
+.tec h2 {
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 24px;
   color: #9490ff;
 }
+
 .grid-container {
   display: grid;
   grid-gap: 20px;
