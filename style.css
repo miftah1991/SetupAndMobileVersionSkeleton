@@ -195,13 +195,16 @@ header {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  border-right: 1px solid gray;
   padding: 10px;
   color: #fff;
 }
 
+.proj-tech .border-class {
+  border-right: 1px solid gray;
+}
+
 .noborder {
-  border: none;
+  border-right: 0px solid #191765;
 }
 
 .btn {
@@ -252,4 +255,45 @@ header {
 .grid-container {
   display: grid;
   grid-gap: 20px;
+}
+
+.contact-section h4 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  color: #9390ff;
+  text-align: center;
+}
+
+.contact-section p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #F5F5FF;
+  margin: 24px 24px 40px 24px;
+}
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin:0px 24px 0px 24px;
+  justify-content: center;
+}
+input, textarea{
+  width: 327px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+input {
+  height: 48px;
+  color: #81818c;
+}
+#email::placeholder {
+  color: #191765;
 }
