@@ -119,7 +119,7 @@ header {
   display: flex;
   justify-content: center;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .fab {
@@ -195,13 +195,16 @@ header {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  border-right: 1px solid gray;
   padding: 10px;
   color: #fff;
 }
 
+.proj-tech .border-class {
+  border-right: 1px solid gray;
+}
+
 .noborder {
-  border: none;
+  border-right: 0 solid #191765;
 }
 
 .btn {
@@ -214,8 +217,12 @@ header {
 }
 
 .btn:hover {
-  color: #7d73fc;
-  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+  background-color: #7d73fc;
+}
+
+.btn:active {
+  background-color: #5e42d7;
 }
 
 .proj-1,
@@ -252,4 +259,106 @@ header {
 .grid-container {
   display: grid;
   grid-gap: 20px;
+}
+
+.contact-section h4 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  color: #9390ff;
+  text-align: center;
+}
+
+.contact-section p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #f5f5ff;
+  margin: 24px 24px 40px 24px;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 0 24px 0 24px;
+  justify-content: center;
+}
+
+input,
+textarea {
+  font-family: Inter, sans-serif;
+  width: 327px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+input {
+  height: 48px;
+  color: #81818c;
+}
+
+textarea {
+  height: 148px;
+  color: #81818c;
+}
+
+#email::placeholder {
+  color: #191765;
+}
+
+.submit_button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#submit {
+  background-color: #7d73fc;
+  color: #edecff;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  width: 89px;
+  height: 48px;
+  margin: 40px 143px 71px 143px;
+  cursor: pointer;
+}
+
+.footer-section {
+  padding-top: 24px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hrbar-full {
+  border: 0.2px solid #646369;
+  width: 100%;
+  margin: 0;
+}
+
+.footer-email {
+  margin-top: -15px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-section .footer-hr {
+  width: 50%;
+  align-self: center;
+  background-color: black;
+  border: 2px solid black;
 }
