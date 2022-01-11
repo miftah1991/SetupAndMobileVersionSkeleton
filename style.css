@@ -283,6 +283,7 @@ header {
   justify-content: center;
 }
 input, textarea{
+  font-family: Inter, sans-serif;
   width: 327px;
   font-style: normal;
   font-weight: normal;
@@ -294,6 +295,32 @@ input {
   height: 48px;
   color: #81818c;
 }
+
+textarea {
+  height: 148px;
+  color: #81818c;
+}
+
 #email::placeholder {
   color: #191765;
+}
+
+.submit_button {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+button {
+ background-color: #7D73FC;
+ color:#edecff;
+ font-family: Roboto;
+ font-style: normal;
+ font-weight: 500;
+ font-size: 12px;
+ line-height: 24px;
+ width: 89px;
+ height: 48px;
+ margin: 40px 143px 71px 143ps;
+ cursor: pointer;
 }
