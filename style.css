@@ -318,7 +318,7 @@ textarea {
   align-items: center;
 }
 
-button {
+#submit {
   background-color: #7d73fc;
   color: #edecff;
   font-family: Roboto;
