@@ -119,7 +119,7 @@ header {
   display: flex;
   justify-content: center;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .fab {
@@ -217,8 +217,12 @@ header {
 }
 
 .btn:hover {
-  color: #7d73fc;
-  background-color: #fff;
+  box-shadow: 0px 8px 16px rgba(125, 115, 252, 0.48);
+  background-color: #7d73fc;
+}
+
+.btn:active {
+  background-color: #5e42d7;
 }
 
 .proj-1,
@@ -272,17 +276,20 @@ header {
   font-size: 16px;
   line-height: 24px;
   text-align: center;
-  color: #F5F5FF;
+  color: #f5f5ff;
   margin: 24px 24px 40px 24px;
 }
+
 #contact-form {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin:0px 24px 0px 24px;
+  margin: 0px 24px 0px 24px;
   justify-content: center;
 }
-input, textarea{
+
+input,
+textarea {
   font-family: Inter, sans-serif;
   width: 327px;
   font-style: normal;
@@ -306,21 +313,52 @@ textarea {
 }
 
 .submit_button {
- display: flex;
- flex-direction: column;
- align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 button {
- background-color: #7D73FC;
- color:#edecff;
- font-family: Roboto;
- font-style: normal;
- font-weight: 500;
- font-size: 12px;
- line-height: 24px;
- width: 89px;
- height: 48px;
- margin: 40px 143px 71px 143ps;
- cursor: pointer;
+  background-color: #7d73fc;
+  color: #edecff;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  width: 89px;
+  height: 48px;
+  margin: 40px 143px 71px 143px;
+  cursor: pointer;
+}
+
+.footer-section {
+  padding-top: 24px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hrbar-full {
+  border: 0.2px solid #646369;
+  width: 100%;
+  margin: 0;
+}
+
+.footer-email {
+  margin-top: -15px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-section .footer-hr {
+  width: 50%;
+  align-self: center;
+  background-color: black;
+  border: 2px solid black;
 }
