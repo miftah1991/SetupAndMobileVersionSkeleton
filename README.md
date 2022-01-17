@@ -11,6 +11,8 @@ Project  Demo
 ---------------------------------------------
 Live Demo Link
 
+[Demo](https://miftah1991.github.io/SetupAndMobileVersionSkeleton/)
+
 ![alt text](https://github.com/miftah1991/SetupAndMobileVersionSkeleton/blob/Milestone1/SystemScreenShot.png)
 
 ![alt text](https://github.com/miftah1991/SetupAndMobileVersionSkeleton/blob/Milestone4-DesktopVersion/SystemScreenShot.png)
