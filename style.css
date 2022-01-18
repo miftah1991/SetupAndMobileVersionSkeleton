@@ -47,7 +47,7 @@ body {
 }
 
 .title-1 {
-  color: #7d73fc;
+  color: #463ebd;
   font-style: normal;
   font-weight: bold;
   font-size: 35px;
@@ -255,16 +255,16 @@ body {
 
 .btn {
   margin-top: 15px;
-  background-color: #7d73fc;
+  background-color: #463ebd;
   width: 95px;
   height: 44px;
   color: #fff;
-  border: 1px solid #7d73fc;
+  border: 1px solid #463ebd;
 }
 
 .btn:hover {
   box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
-  background-color: #7d73fc;
+  background-color: #463ebd;
 }
 
 .btn:active {
@@ -346,11 +346,19 @@ textarea {
 
 input {
   height: 48px;
-  color: #81818c;
+  color: #000000;
 }
 
 textarea {
   height: 148px;
+  color: #000000;
+}
+
+input::placeholder {
+  color: #81818c;
+}
+
+textarea::placeholder {
   color: #81818c;
 }
 
@@ -374,7 +382,7 @@ textarea::placeholder {
 }
 
 #submit {
-  background-color: #7d73fc;
+  background-color: #463ebd;
   color: #edecff;
   font-family: Roboto, sans-serif;
   font-style: normal;
