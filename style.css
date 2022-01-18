@@ -24,6 +24,11 @@ body {
   display: none;
 }
 
+.work-title a {
+  text-decoration: none;
+  color: #a2a3ae;
+}
+
 .nav-list > li > a {
   text-decoration: inherit;
   color: inherit;
@@ -192,11 +197,6 @@ body {
   font-size: 1.25rem;
   padding-left: 20px;
   margin: 1px;
-}
-
-.work-title a {
-  text-decoration: none;
-  color: #a2a3ae;
 }
 
 .recent-project-title {
