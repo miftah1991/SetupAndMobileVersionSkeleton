@@ -24,6 +24,11 @@ body {
   display: none;
 }
 
+.nav-list > li > a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
 .workl {
   display: none;
 }
