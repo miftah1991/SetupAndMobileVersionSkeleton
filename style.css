@@ -346,12 +346,12 @@ textarea {
 
 input {
   height: 48px;
-  color: #000000;
+  color: #000;
 }
 
 textarea {
   height: 148px;
-  color: #000000;
+  color: #000;
 }
 
 input::placeholder {
@@ -360,6 +360,7 @@ input::placeholder {
 
 textarea::placeholder {
   color: #81818c;
+  padding-left: 10px;
 }
 
 #email::placeholder {
@@ -368,10 +369,6 @@ textarea::placeholder {
 }
 
 #first-name::placeholder {
-  padding-left: 10px;
-}
-
-textarea::placeholder {
   padding-left: 10px;
 }
 
