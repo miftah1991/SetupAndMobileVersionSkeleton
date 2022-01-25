@@ -107,25 +107,25 @@ function showInnerItems(index){
       <i id="closer" class="fa fa-times"></i>
   </div>
   <div class="popup-img">
-      <img src="images/popup-img.png" alt="Project Screen Shot" />
+      <img src="${projects[index].image}" alt="Project Screen Shot" />
   </div>
   <div class="popup-project-detail">
       <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.
+      ${projects[index].description}
       </p>
       
   </div>
   <div class="popup-technologies">
       <ul class="proj-tech">
-          <li class="border-class">html</li>
-          <li class="border-class">Ruby on rails</li>
-          <li class="border-class">css</li>
-          <li class="border-class">Github</li>
+          <li class="border-class">${projects[index].technologyList[0]}</li>
+          <li class="border-class">${projects[index].technologyList[1]}</li>
+          <li class="border-class">${projects[index].technologyList[2]}</li>
+          <li class="border-class">${projects[index].technologyList[3]}</li>
       </ul>
   </div>
   <div class="popup-footer">
-      <button class="popup-btn">See Live <img src="/images/live-icon.png" ></button>
-      <button class="popup-btn">See Source <i class="fab fa-github"></i></button>
+      <button class="popup-btn">${projects[index].firstButton} <img src="/images/live-icon.png" ></button>
+      <button class="popup-btn">${projects[index].secondButton} <i class="fab fa-github"></i></button>
   </div>
 </div>
     `;
