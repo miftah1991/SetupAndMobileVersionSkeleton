@@ -3,56 +3,99 @@ const projects = [
     id: 'proj-1',
     title: 'Multi-Post Stories 1',
     image: '/images/proj-img.png',
-    imageclass:'img-1-3',
+    imageclass: 'img-1-3',
     description:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    technologyList: ['html', 'Css', 'Ruby','Ruby'],
+    technologyList: ['html', 'Css', 'Ruby', 'Ruby'],
     firstButton: 'See Live',
     secondButton: 'See Source',
-    index:0
+    index: 0,
   },
   {
     id: 'proj-2',
     title: 'Multi-Post Stories',
     image: '/images/proj-img.png',
-    imageclass:'img-2-4',
+    imageclass: 'img-2-4',
     description:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    technologyList: ['Html', 'Css', 'Javascript','Rails'],
+    technologyList: ['Html', 'Css', 'Javascript', 'Rails'],
     firstButton: 'See Live',
     secondButton: 'See Source',
-    index:1
+    index: 1,
   },
   {
     id: 'proj-3',
     title: 'Multi-Post Stories',
     image: '/images/proj-img.png',
-    imageclass:'img-1-3',
+    imageclass: 'img-1-3',
     description:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    technologyList: ['Html', 'Css', 'Ruby','Javascript'],
+    technologyList: ['Html', 'Css', 'Ruby', 'Javascript'],
     firstButton: 'See Live',
     secondButton: 'See Source',
-    index:2
+    index: 2,
   },
   {
     id: 'proj-4',
     title: 'Multi-Post Stories',
     image: '/images/proj-img.png',
-    imageclass:'img-2-4',
+    imageclass: 'img-2-4',
     description:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    technologyList: ['Html', 'Css', 'Javascript','Ruby'],
+    technologyList: ['Html', 'Css', 'Javascript', 'Ruby'],
     firstButton: 'See Live',
     secondButton: 'See Source',
-    index:3
+    index: 3,
   },
 ];
+const popupWindow = document.querySelector('.projec-detail');
+function showInnerItems(index) {
+  const popupheader = document.createElement('div');
+  popupheader.innerHTML = `
+  <div class="project-popup">
+  <div class="popup-header">
+      <h3 class="popup-title">${projects[index].title}</h3>
+      <i id="closer" class="fa fa-times"></i>
+  </div>
+  <div class="popup-img">
+      <img src="/images/popup-img.png" alt="Project Screen Shot" />
+  </div>
+  <div class="popup-project-detail">
+      <p>
+      ${projects[index].description}
+      </p>
+      
+  </div>
+  <div class="popup-technologies">
+      <ul class="proj-tech">
+          <li class="border-class">${projects[index].technologyList[0]}</li>
+          <li class="border-class">${projects[index].technologyList[1]}</li>
+          <li class="border-class">${projects[index].technologyList[2]}</li>
+          <li class="border-class">${projects[index].technologyList[3]}</li>
+      </ul>
+  </div>
+  <div class="popup-footer">
+      <button class="popup-btn">${projects[index].firstButton} <img src="/images/live-icon.png" ></button>
+      <button class="popup-btn">${projects[index].secondButton} <i class="fab fa-github"></i></button>
+  </div>
+</div>
+    `;
+  popupWindow.appendChild(popupheader);
+  const closer = document.getElementById('closer');
+  closer.addEventListener('click', () => {
+    popupWindow.removeChild(popupheader);
+  });
+}
+function displayPopup(param) {
+  popupWindow.style.display = 'block';
+  showInnerItems(param);
+}
+
 const projContainer = document.querySelector('.grid-container');
 projects.forEach((project) => {
-  //alert()
+  // alert()
   const container = document.createElement('div');
-  container.innerHTML =`
+  container.innerHTML = `
   <div class="${project.id}">
                 <div class="proj-img">
                     <img src="${project.image}" alt="Project Screen Shot" class="${project.imageclass}">
@@ -82,56 +125,10 @@ projects.forEach((project) => {
                 </div>
             </div>
   `;
-  //alert(container);
+  // alert(container);
   projContainer.appendChild(container);
   const btn = document.getElementById(project.id);
   btn.addEventListener('click', () => {
-    displayPopup(project.index)
+    displayPopup(project.index);
   });
-  
 });
- const popupWindow = document.querySelector('.projec-detail');
- 
-function displayPopup(param) {
-  popupWindow.style.display = "block";
-  showInnerItems(param);
-}
-
- 
-function showInnerItems(index){
-  const popupheader = document.createElement('div');
-  popupheader.innerHTML =`
-  <div class="project-popup">
-  <div class="popup-header">
-      <h3 class="popup-title">${projects[index].title}</h3>
-      <i id="closer" class="fa fa-times"></i>
-  </div>
-  <div class="popup-img">
-      <img src="${projects[index].image}" alt="Project Screen Shot" />
-  </div>
-  <div class="popup-project-detail">
-      <p>
-      ${projects[index].description}
-      </p>
-      
-  </div>
-  <div class="popup-technologies">
-      <ul class="proj-tech">
-          <li class="border-class">${projects[index].technologyList[0]}</li>
-          <li class="border-class">${projects[index].technologyList[1]}</li>
-          <li class="border-class">${projects[index].technologyList[2]}</li>
-          <li class="border-class">${projects[index].technologyList[3]}</li>
-      </ul>
-  </div>
-  <div class="popup-footer">
-      <button class="popup-btn">${projects[index].firstButton} <img src="/images/live-icon.png" ></button>
-      <button class="popup-btn">${projects[index].secondButton} <i class="fab fa-github"></i></button>
-  </div>
-</div>
-    `;
-    popupWindow.appendChild(popupheader);
-    const closer = document.getElementById("closer");
-    closer.addEventListener('click', () => {
-      popupWindow.removeChild(popupheader);
-    });
-}
