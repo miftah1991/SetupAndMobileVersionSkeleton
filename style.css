@@ -21,7 +21,6 @@ body {
 }
 
 .project-popup {
-  
   display: none;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   background: rgba(255, 255, 255, 0.16);
@@ -42,6 +41,11 @@ body {
   align-items: baseline;
   color: white;
 }
+
+.popup-img img {
+  max-width: 90%;
+}
+
 .popup-project-detail {
   max-width: 50%;
   text-align:center;
