@@ -136,11 +136,17 @@
             </div>
             <div class="visitor-email">
                 <input type="email" id="email" name="email" required placeholder="youremail@mail.com" >
+                
             </div>
             <div class="visitor-Message">
                 <textarea id="message" name="message" maxlength="500" placeholder="Enter text" required ></textarea>
             </div>
-            <div class="submit_button"><button id="submit" type="submit" class="btn">See project</button></div>
+            <div class="error-msg">
+              <p id="email-error-message"></p>
+            </div>
+            <div class="submit_button">
+                <button id="submit" type="submit" class="btn">See project</button>
+            </div>
         </form>
     </section>
     <div class="hrbar-full"></div>
@@ -163,5 +169,6 @@
     <hr class="footer-hr">
     <script src="menu.js" ></script>
     <script src="popup.js"></script>
+    <script src="validate.js"></script>
 </body>
 </html>
