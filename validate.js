@@ -12,7 +12,7 @@ function validateEmail(email) {
 
 form.addEventListener('submit', (e) => {
     if (!validateEmail(email.value)) {
-      erroMessage.innerHTML = '(*) Please enter a valid email address';
+      erroMessage.innerHTML = '(*) Please enter a valid email address (lower case)';
        // alert()
     e.preventDefault();
   } else {
