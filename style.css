@@ -82,6 +82,10 @@ body {
   text-align: center;
 }
 
+#email-error-message {
+  color: red;
+}
+
 .popup-btn {
   background-color: #7d73fc;
   box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
