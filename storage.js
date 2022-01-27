@@ -17,3 +17,11 @@ contactForm.addEventListener('keyup', (e) => {
   const message = document.getElementById('message').value;
   storeData(name, email, message);
 });
+
+const getData = JSON.parse(localStorage.getItem('formData'));
+
+window.onload = () => {
+  document.getElementById('first-name').value = getData.nameData;
+  document.getElementById('email').value = getData.emailData;
+  document.getElementById('message').value = getData.messageData;
+};
