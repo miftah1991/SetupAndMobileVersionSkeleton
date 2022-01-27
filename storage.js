@@ -20,9 +20,9 @@ contactForm.addEventListener('keyup', (e) => {
 const getData = JSON.parse(localStorage.getItem('formData'));
 
 window.onload = () => {
-  if(getData !=null){
-  document.getElementById('first-name').value = getData.nameData;
-  document.getElementById('email').value = getData.emailData;
-  document.getElementById('message').value = getData.messageData;
+  if (getData != null) {
+    document.getElementById('first-name').value = getData.nameData;
+    document.getElementById('email').value = getData.emailData;
+    document.getElementById('message').value = getData.messageData;
   }
 };
