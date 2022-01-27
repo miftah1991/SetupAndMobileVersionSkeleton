@@ -8,7 +8,7 @@ function storeData(nameData, emailData, messageData) {
   };
 
   localStorage.setItem('formData', JSON.stringify(formData));
-  //console.log(JSON.stringify(formData));
+  // console.log(JSON.stringify(formData));
 }
 contactForm.addEventListener('keyup', (e) => {
   e.preventDefault();
