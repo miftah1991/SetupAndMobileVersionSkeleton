@@ -8,7 +8,6 @@ function storeData(nameData, emailData, messageData) {
   };
 
   localStorage.setItem('formData', JSON.stringify(formData));
-  // console.log(JSON.stringify(formData));
 }
 contactForm.addEventListener('keyup', (e) => {
   e.preventDefault();
@@ -21,7 +20,9 @@ contactForm.addEventListener('keyup', (e) => {
 const getData = JSON.parse(localStorage.getItem('formData'));
 
 window.onload = () => {
+  if(getData !=null){
   document.getElementById('first-name').value = getData.nameData;
   document.getElementById('email').value = getData.emailData;
   document.getElementById('message').value = getData.messageData;
+  }
 };
