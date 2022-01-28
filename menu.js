@@ -16,4 +16,4 @@ menubtn.addEventListener('click', showmMenu);
 closebtn.addEventListener('click', hideMenu);
 portfolitbtn.addEventListener('click', hideMenu);
 aboutbtn.addEventListener('click', hideMenu);
-contactbtn.addEventListener('click', hideMenu);
+contactbtn.addEventListener('click', hideMenu());
